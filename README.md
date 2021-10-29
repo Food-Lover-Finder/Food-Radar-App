@@ -63,27 +63,27 @@ This is an app for hungry people who have little desire to do much thinking abou
 **Tab Navigation** (Tab to Screen)
 
 * Stream
-* Survey 
-* Profile
+   * Survey 
+   * Profile
 
 **Flow Navigation** (Screen to Screen)
 
 * Register
- * stream 
- * survey
+   * stream 
+   * survey
 
 * Login 
- * stream
+   * stream
 
 * Stream
- * survey
+   * survey
 
 * Survey 
- * stream 
+   * stream 
 
 * Profile
- * stream
- * survey
+   * stream
+   * survey
 
 
 ## Wireframes
