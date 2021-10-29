@@ -87,5 +87,4 @@ This is an app for hungry people who have little desire to do much thinking abou
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img width="934" alt="Screen Shot 2021-10-29 at 5 36 11 PM" src="https://user-images.githubusercontent.com/87346208/139504454-cbe315bc-591f-4de9-8225-94a82be7c04b.png">
