@@ -1,4 +1,4 @@
-# Food Lover App
+# Food Radar App
 
 ## Table of Contents
 1. [Overview](#Overview)
