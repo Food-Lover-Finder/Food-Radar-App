@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -103,7 +103,7 @@
 				};
 			};
 			buildConfigurationList = 9D2CFCFD273443070078E86D /* Build configuration list for PBXProject "Food-Radar-App" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
