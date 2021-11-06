@@ -102,11 +102,11 @@ Home Feed: <br />
 (Read/GET) restaurants’ locations <br />
 (Read/GET) restaurants price range <br />
 (Read/GET) restaurants rating <br />
-
+<br />
 Menu Page: <br />
 (Read/GET) restaurant images <br />
 (Read/GET) menu items <br />
-(Update/PUT) user likes this location
+(Update/PUT) user likes this location <br />
 
 Login page: <br />
 (Read/GET) user login information <br />
