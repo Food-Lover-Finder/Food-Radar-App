@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D2643DC27363276003FF259 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2643DB27363276003FF259 /* SignUpViewController.swift */; };
 		9D2CFD06273443070078E86D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CFD05273443070078E86D /* AppDelegate.swift */; };
 		9D2CFD08273443070078E86D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CFD07273443070078E86D /* SceneDelegate.swift */; };
 		9D2CFD0D273443070078E86D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2CFD0B273443070078E86D /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D2643DB27363276003FF259 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9D2CFD02273443070078E86D /* Food-Radar-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Radar-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2CFD05273443070078E86D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2CFD07273443070078E86D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				9D2CFD05273443070078E86D /* AppDelegate.swift */,
+				9D2643DB27363276003FF259 /* SignUpViewController.swift */,
 				9D2CFD07273443070078E86D /* SceneDelegate.swift */,
 				9D2CFD0B273443070078E86D /* Main.storyboard */,
 				9D2CFD0E273443090078E86D /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2643DC27363276003FF259 /* SignUpViewController.swift in Sources */,
 				D7EF46FD2735DAA80011BAD8 /* LoginViewController.swift in Sources */,
 				9D2CFD06273443070078E86D /* AppDelegate.swift in Sources */,
 				D7EF46FF2735DAB90011BAD8 /* FeedViewController.swift in Sources */,
