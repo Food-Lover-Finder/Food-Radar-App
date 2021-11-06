@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		9D2CFD06273443070078E86D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CFD05273443070078E86D /* AppDelegate.swift */; };
 		9D2CFD08273443070078E86D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CFD07273443070078E86D /* SceneDelegate.swift */; };
-		9D2CFD0A273443070078E86D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CFD09273443070078E86D /* ViewController.swift */; };
 		9D2CFD0D273443070078E86D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2CFD0B273443070078E86D /* Main.storyboard */; };
 		9D2CFD0F273443090078E86D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2CFD0E273443090078E86D /* Assets.xcassets */; };
 		9D2CFD12273443090078E86D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2CFD10273443090078E86D /* LaunchScreen.storyboard */; };
+		D7EF46FD2735DAA80011BAD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EF46FC2735DAA80011BAD8 /* LoginViewController.swift */; };
+		D7EF46FF2735DAB90011BAD8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EF46FE2735DAB90011BAD8 /* FeedViewController.swift */; };
+		D7EF47032735FE980011BAD8 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EF47022735FE980011BAD8 /* LandingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D2CFD02273443070078E86D /* Food-Radar-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Radar-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2CFD05273443070078E86D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2CFD07273443070078E86D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D2CFD09273443070078E86D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D2CFD0C273443070078E86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D2CFD0E273443090078E86D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D2CFD11273443090078E86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D2CFD13273443090078E86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7EF46FC2735DAA80011BAD8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D7EF46FE2735DAB90011BAD8 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		D7EF47022735FE980011BAD8 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				9D2CFD05273443070078E86D /* AppDelegate.swift */,
 				9D2CFD07273443070078E86D /* SceneDelegate.swift */,
-				9D2CFD09273443070078E86D /* ViewController.swift */,
 				9D2CFD0B273443070078E86D /* Main.storyboard */,
 				9D2CFD0E273443090078E86D /* Assets.xcassets */,
 				9D2CFD10273443090078E86D /* LaunchScreen.storyboard */,
 				9D2CFD13273443090078E86D /* Info.plist */,
+				D7EF46FC2735DAA80011BAD8 /* LoginViewController.swift */,
+				D7EF46FE2735DAB90011BAD8 /* FeedViewController.swift */,
+				D7EF47022735FE980011BAD8 /* LandingViewController.swift */,
 			);
 			path = "Food-Radar-App";
 			sourceTree = "<group>";
@@ -93,7 +99,6 @@
 		9D2CFCFA273443070078E86D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
@@ -138,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2CFD0A273443070078E86D /* ViewController.swift in Sources */,
+				D7EF46FD2735DAA80011BAD8 /* LoginViewController.swift in Sources */,
 				9D2CFD06273443070078E86D /* AppDelegate.swift in Sources */,
+				D7EF46FF2735DAB90011BAD8 /* FeedViewController.swift in Sources */,
+				D7EF47032735FE980011BAD8 /* LandingViewController.swift in Sources */,
 				9D2CFD08273443070078E86D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
