@@ -93,7 +93,7 @@ Schema
 Models
 
 <img width="529" alt="Screen Shot 2021-11-05 at 4 35 12 PM" src="https://user-images.githubusercontent.com/87346208/140577036-9b671f6d-99df-4eeb-bc0d-69471eb29fb5.png">
-
+<br />
 Network Requests
 Home Feed: <br />
 (Read/GET) restaurant images <br />
