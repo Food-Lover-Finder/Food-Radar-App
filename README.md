@@ -110,7 +110,7 @@ Menu Page:
 (Update/PUT) user likes this location
 
 Login page:
-(Read/GET) user login information
+(Read/GET) user login information //
 (Delete) users food restrictions & preferences
 (Update/PUT) users food restrictions & preferences
 
