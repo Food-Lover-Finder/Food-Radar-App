@@ -95,7 +95,7 @@ Models
 <img width="529" alt="Screen Shot 2021-11-05 at 4 35 12 PM" src="https://user-images.githubusercontent.com/87346208/140577036-9b671f6d-99df-4eeb-bc0d-69471eb29fb5.png">
 
 Network Requests
-Home Feed:
+Home Feed: <br />
 (Read/GET) restaurant images <br />
 (Read/GET) restaurant names <br />
 (Read/GET) restaurant descriptions <br />
@@ -104,13 +104,13 @@ Home Feed:
 (Read/GET) restaurants rating 
 
 Menu Page: <br />
-(Read/GET) restaurant images
+(Read/GET) restaurant images <br />
 (Read/GET) menu items <br />
 (Update/PUT) user likes this location
 
 Login page: <br />
-(Read/GET) user login information 
-*(Delete) users food restrictions & preferences
-*(Update/PUT) users food restrictions & preferences
+(Read/GET) user login information <br />
+(Delete) users food restrictions & preferences <br />
+(Update/PUT) users food restrictions & preferences 
 
 
