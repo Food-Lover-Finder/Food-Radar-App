@@ -96,20 +96,20 @@ Models
 
 Network Requests
 Home Feed:
-*(Read/GET) restaurant images
-*(Read/GET) restaurant names 
-*(Read/GET) restaurant descriptions
-*Read/GET) restaurants’ locations
-*(Read/GET) restaurants price range
-*(Read/GET) restaurants rating 
+(Read/GET) restaurant images <br />
+(Read/GET) restaurant names <br />
+(Read/GET) restaurant descriptions <br />
+(Read/GET) restaurants’ locations <br />
+(Read/GET) restaurants price range <br />
+(Read/GET) restaurants rating 
 
-Menu Page:
-*(Read/GET) restaurant images
-*(Read/GET) menu items
-*(Update/PUT) user likes this location
+Menu Page: <br />
+(Read/GET) restaurant images
+(Read/GET) menu items <br />
+(Update/PUT) user likes this location
 
-Login page:
-*(Read/GET) user login information 
+Login page: <br />
+(Read/GET) user login information 
 *(Delete) users food restrictions & preferences
 *(Update/PUT) users food restrictions & preferences
 
