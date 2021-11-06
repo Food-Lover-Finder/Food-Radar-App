@@ -42,7 +42,6 @@ This is an app for hungry people who have little desire to do much thinking abou
 
 * User can join a group of people 
 * User can create a group for others to join 
-*  
 
 ### 2. Screen Archetypes
 
@@ -97,21 +96,21 @@ Models
 
 Network Requests
 Home Feed:
-(Read/GET) restaurant images
-(Read/GET) restaurant names 
-(Read/GET) restaurant descriptions
-(Read/GET) restaurants’ locations
-(Read/GET) restaurants price range
-(Read/GET) restaurants rating 
+*(Read/GET) restaurant images
+*(Read/GET) restaurant names 
+*(Read/GET) restaurant descriptions
+*Read/GET) restaurants’ locations
+*(Read/GET) restaurants price range
+*(Read/GET) restaurants rating 
 
 Menu Page:
-(Read/GET) restaurant images
-(Read/GET) menu items
-(Update/PUT) user likes this location
+*(Read/GET) restaurant images
+*(Read/GET) menu items
+*(Update/PUT) user likes this location
 
 Login page:
-(Read/GET) user login information 
-(Delete) users food restrictions & preferences
-(Update/PUT) users food restrictions & preferences
+*(Read/GET) user login information 
+*(Delete) users food restrictions & preferences
+*(Update/PUT) users food restrictions & preferences
 
 
