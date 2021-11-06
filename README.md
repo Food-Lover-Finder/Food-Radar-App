@@ -101,7 +101,7 @@ Home Feed: <br />
 (Read/GET) restaurant descriptions <br />
 (Read/GET) restaurants’ locations <br />
 (Read/GET) restaurants price range <br />
-(Read/GET) restaurants rating 
+(Read/GET) restaurants rating <br />
 
 Menu Page: <br />
 (Read/GET) restaurant images <br />
