@@ -1,4 +1,4 @@
-# Food Lover App
+# Food Radar App
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -42,7 +42,6 @@ This is an app for hungry people who have little desire to do much thinking abou
 
 * User can join a group of people 
 * User can create a group for others to join 
-*  
 
 ### 2. Screen Archetypes
 
@@ -88,3 +87,29 @@ This is an app for hungry people who have little desire to do much thinking abou
 
 ## Wireframes
 <img width="934" alt="Screen Shot 2021-10-29 at 5 36 11 PM" src="https://user-images.githubusercontent.com/87346208/139504454-cbe315bc-591f-4de9-8225-94a82be7c04b.png">
+
+## Schema
+Models
+
+<img width="529" alt="Screen Shot 2021-11-05 at 4 35 12 PM" src="https://user-images.githubusercontent.com/87346208/140577036-9b671f6d-99df-4eeb-bc0d-69471eb29fb5.png">
+
+## Network Requests 
+Home Feed: <br />
+(Read/GET) restaurant images <br />
+(Read/GET) restaurant names <br />
+(Read/GET) restaurant descriptions <br />
+(Read/GET) restaurants’ locations <br />
+(Read/GET) restaurants price range <br />
+(Read/GET) restaurants rating <br />
+<br />
+Menu Page: <br />
+(Read/GET) restaurant images <br />
+(Read/GET) menu items <br />
+(Update/PUT) user likes this location <br />
+<br />
+Login page: <br />
+(Read/GET) user login information <br />
+(Delete) users food restrictions & preferences <br />
+(Update/PUT) users food restrictions & preferences 
+
+

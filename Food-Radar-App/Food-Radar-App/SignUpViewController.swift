@@ -1,31 +1,21 @@
 //
-//  LoginViewController.swift
+//  SignUpViewController.swift
 //  Food-Radar-App
 //
-//  Created by Fatima Javid on 11/5/21.
+//  Created by Brang Mai on 11/5/21.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var usernameField: UITextField!
-    
-    @IBOutlet weak var passwordField: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func onLogin(_ sender: Any) {
-//        let username = usernameField.text!
-//        let password = passwordField.text!
-//
-//        PFUser.logInWithUsername(inBackground: )
-    }
     
+
     /*
     // MARK: - Navigation
 
