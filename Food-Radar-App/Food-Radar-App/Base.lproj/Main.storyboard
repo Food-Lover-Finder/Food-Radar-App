@@ -316,7 +316,7 @@
                                 <rect key="frame" x="162" y="741" width="91" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43591678315456794" green="0.57789352522921011" blue="0.765659135641511" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Sign Up"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By signing up, you agree to our Terms, Data Policy and Cookies Policy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFt-6x-4Iy">
                                 <rect key="frame" x="21" y="785" width="373" height="33"/>
@@ -335,7 +335,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnK-eZ-zdG">
                                 <rect key="frame" x="162" y="820" width="71" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Login"/>
                                 <connections>
                                     <segue destination="4bo-IJ-PaX" kind="show" id="cX6-8H-zNv"/>
                                 </connections>
@@ -348,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKj-Gl-avT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="341" y="853"/>
+            <point key="canvasLocation" x="340.57971014492756" y="852.45535714285711"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="VlS-PG-ORT">
