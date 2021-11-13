@@ -112,4 +112,10 @@ Login page: <br />
 (Delete) users food restrictions & preferences <br />
 (Update/PUT) users food restrictions & preferences 
 
+Project Progress
+
+![](https://i.imgur.com/X3sHugv.gif)
+
+
+
 
