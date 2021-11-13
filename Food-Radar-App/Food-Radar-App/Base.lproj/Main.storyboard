@@ -293,7 +293,7 @@
                                 <rect key="frame" x="162" y="741" width="91" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43591678315456794" green="0.57789352522921011" blue="0.765659135641511" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <segue destination="LjH-ig-hDF" kind="presentation" id="F10-mB-i3S"/>
                                 </connections>
