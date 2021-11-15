@@ -30,18 +30,18 @@ This is an app for hungry people who have little desire to do much thinking abou
 
 **Required Must-have Stories**
 
-* User can sign up for an account
-* User can log into their account 
-* User can choose to take a food preference survey 
-* User can choose to skip food preference survey
-* User can get food suggestions based on their location only
-* User can get food suggestions based on food preferences as well as location
-* User can view profile 
+- [x] User can sign up for an account
+- [x] User can log into their account 
+- [ ] User can choose to take a food preference survey 
+- [ ] User can choose to skip food preference survey
+- [ ] User can get food suggestions based on their location only
+- [ ] User can get food suggestions based on food preferences as well as location
+- [ ] User can view profile 
 
 **Optional Nice-to-have Stories**
 
-* User can join a group of people 
-* User can create a group for others to join 
+- [ ] User can join a group of people 
+- [ ] User can create a group for others to join 
 
 ### 2. Screen Archetypes
 
