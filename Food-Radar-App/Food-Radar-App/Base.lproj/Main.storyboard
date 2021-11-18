@@ -120,7 +120,7 @@
             <objects>
                 <viewController id="rAM-V6-phN" customClass="FeedViewController" customModule="Food_Radar_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u49-wh-f6y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ngl-ik-tfM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73Z-m6-RJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064" y="84"/>
+            <point key="canvasLocation" x="-459" y="2217"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="msP-kq-MOn">
@@ -317,6 +317,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43591678315456794" green="0.57789352522921011" blue="0.765659135641511" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="LjH-ig-hDF" kind="presentation" modalPresentationStyle="fullScreen" id="NFw-ed-nAz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By signing up, you agree to our Terms, Data Policy and Cookies Policy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFt-6x-4Iy">
                                 <rect key="frame" x="21" y="785" width="373" height="33"/>
@@ -345,10 +348,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Lm4-eO-x9Y"/>
+                    <connections>
+                        <outlet property="email" destination="JZP-5H-2FA" id="9gq-eI-NHS"/>
+                        <outlet property="fullName" destination="f0n-TS-jDC" id="jqE-FO-0d9"/>
+                        <outlet property="password" destination="2gF-TZ-bfF" id="TYm-3m-9gI"/>
+                        <outlet property="userName" destination="QZZ-n8-16F" id="tXL-Ps-j2E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKj-Gl-avT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-459" y="775"/>
+            <point key="canvasLocation" x="3" y="794"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="VlS-PG-ORT">
@@ -423,12 +432,12 @@
                     <connections>
                         <outlet property="passwordField" destination="7nb-Nw-I39" id="0VI-PQ-HBc"/>
                         <outlet property="usernameField" destination="izG-yg-1u5" id="slX-dk-JFb"/>
-                        <segue destination="LjH-ig-hDF" kind="presentation" id="ppq-ib-3IW"/>
+                        <segue destination="LjH-ig-hDF" kind="presentation" modalPresentationStyle="fullScreen" id="hNx-qG-iNF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBk-Wi-QtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="74"/>
+            <point key="canvasLocation" x="-820" y="794"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n8j-xX-bMz">
@@ -436,7 +445,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LjH-ig-hDF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qIl-px-yiI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -446,10 +455,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKi-RB-XR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1096" y="74"/>
+            <point key="canvasLocation" x="-459" y="1521"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="NFw-ed-nAz"/>
         <segue reference="cX6-8H-zNv"/>
     </inferredMetricsTieBreakers>
     <resources>
