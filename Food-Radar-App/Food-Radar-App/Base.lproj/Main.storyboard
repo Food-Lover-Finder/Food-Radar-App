@@ -174,7 +174,7 @@
                         <viewLayoutGuide key="safeArea" id="ngl-ik-tfM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jCt-aO-irb">
+                    <navigationItem key="navigationItem" title="Home" id="jCt-aO-irb">
                         <barButtonItem key="leftBarButtonItem" title="Log out" id="QMH-rb-qj3">
                             <connections>
                                 <action selector="logOutButton:" destination="rAM-V6-phN" id="L9e-oX-fm5"/>
@@ -186,6 +186,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="homeTableView" destination="2Jf-Zs-KMC" id="bf9-f8-Qmu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73Z-m6-RJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
