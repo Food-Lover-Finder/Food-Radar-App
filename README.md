@@ -30,6 +30,7 @@ This is an app for hungry people who have little desire to do much thinking abou
 
 **Required Must-have Stories**
 
+- [x] User sees app icon in home screen and styled launch screen
 - [x] User can sign up for an account
 - [x] User can log into their account 
 - [ ] User can choose to take a food preference survey 
