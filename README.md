@@ -115,7 +115,7 @@ Login page: <br />
 
 Project Progress
 
-![](https://i.imgur.com/X3sHugv.gif)
+![](https://i.imgur.com/qy3MfDH.gif)
 
 
 
