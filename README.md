@@ -115,7 +115,8 @@ Login page: <br />
 
 Project Progress
 
-![](https://i.imgur.com/qy3MfDH.gif)
+![](https://i.imgur.com/qy3MfDH.gif) <br />
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/87346208/143658839-68546c1e-b6c1-49fe-88aa-f06b8da00eff.gif)
 
 
