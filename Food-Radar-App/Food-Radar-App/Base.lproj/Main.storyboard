@@ -183,6 +183,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Search" id="IJq-4A-wGY">
                             <connections>
                                 <action selector="searchButton:" destination="rAM-V6-phN" id="TJD-hD-O6d"/>
+                                <segue destination="84f-Wc-pjr" kind="show" id="qAt-2j-q15"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -562,8 +563,79 @@
             </objects>
             <point key="canvasLocation" x="-1203" y="815"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Wmp-ek-vPo">
+            <objects>
+                <viewController id="84f-Wc-pjr" customClass="MKMapViewController" customModule="Food_Radar_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OPi-6s-bgl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YRZ-WY-Dmr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <connections>
+                                    <outlet property="delegate" destination="84f-Wc-pjr" id="vtH-fr-nda"/>
+                                </connections>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UuT-MO-mhK">
+                                <rect key="frame" x="0.0" y="813" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="search" id="fRm-ww-DHa">
+                                        <connections>
+                                            <action selector="searchButton:" destination="84f-Wc-pjr" id="CQf-i0-muf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bhb-Pi-Xrm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YRZ-WY-Dmr" firstAttribute="bottom" secondItem="Bhb-Pi-Xrm" secondAttribute="bottom" id="15H-ea-qSd"/>
+                            <constraint firstItem="YRZ-WY-Dmr" firstAttribute="leading" secondItem="Bhb-Pi-Xrm" secondAttribute="leading" id="Soi-0L-AHh"/>
+                            <constraint firstItem="YRZ-WY-Dmr" firstAttribute="top" secondItem="OPi-6s-bgl" secondAttribute="top" id="X4f-rP-DBQ"/>
+                            <constraint firstItem="YRZ-WY-Dmr" firstAttribute="trailing" secondItem="Bhb-Pi-Xrm" secondAttribute="trailing" id="h80-Dq-po5"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" systemItem="search" id="QnU-UK-YUc">
+                            <connections>
+                                <action selector="searchButton:" destination="84f-Wc-pjr" id="q4V-vK-HWQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="m0k-xd-TCB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <connections>
+                        <outlet property="mapView" destination="YRZ-WY-Dmr" id="hjf-yb-0R6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUU-ws-Vzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-542.02898550724638" y="3681.6964285714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ODW-0A-MV8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Vc-k3-zQ4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SDn-Og-yfD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="84f-Wc-pjr" kind="relationship" relationship="rootViewController" id="BRm-DA-EEJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRe-yt-Gki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1452.1739130434785" y="3681.6964285714284"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="qAt-2j-q15"/>
         <segue reference="ppq-ib-3IW"/>
     </inferredMetricsTieBreakers>
     <resources>
