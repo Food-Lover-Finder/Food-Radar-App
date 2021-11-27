@@ -21,6 +21,10 @@ class LoginViewController: UIViewController {
         //fnjksfjhkwh
     }
 
+    @IBAction func onLoginCancelButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func onLogin(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!

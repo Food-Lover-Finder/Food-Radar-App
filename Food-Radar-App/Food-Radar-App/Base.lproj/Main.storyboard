@@ -487,13 +487,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yps-sC-7WN">
-                        <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.backward.2" catalog="system" style="plain" id="Md2-Go-19z">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rx6-nl-uFi">
-                                <rect key="frame" x="20" y="5" width="92" height="34.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LdO-6M-g5G">
+                            <connections>
+                                <action selector="onLoginCancelButton:" destination="4bo-IJ-PaX" id="wTp-d0-FrD"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -570,7 +567,6 @@
         <segue reference="ppq-ib-3IW"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="arrowshape.turn.up.backward.2" catalog="system" width="128" height="86"/>
         <image name="circledesignleft" width="354" height="268"/>
         <image name="circledesignright" width="410" height="412"/>
         <image name="cup" width="30" height="30.5"/>
