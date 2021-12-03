@@ -10,6 +10,8 @@
 		292293B1749D32A7CFCF8D18 /* Pods_Food_Radar_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E26FD8F6DAA4DA60A2059D /* Pods_Food_Radar_App.framework */; };
 		9D15AEE72749CDD5006E136A /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AEE62749CDD5006E136A /* FeedViewCell.swift */; };
 		9D20497C2751FC81008B8B5E /* MKMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20497B2751FC81008B8B5E /* MKMapViewController.swift */; };
+		9D20497E2759EBC7008B8B5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20497D2759EBC7008B8B5E /* ContentView.swift */; };
+		9D2049802759EC5D008B8B5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20497F2759EC5D008B8B5E /* ViewController.swift */; };
 		9D2643DC27363276003FF259 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2643DB27363276003FF259 /* SignUpViewController.swift */; };
 		9D2CFD06273443070078E86D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CFD05273443070078E86D /* AppDelegate.swift */; };
 		9D2CFD08273443070078E86D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CFD07273443070078E86D /* SceneDelegate.swift */; };
@@ -25,6 +27,8 @@
 		35BC33A109CE11DB053F0174 /* Pods-Food-Radar-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food-Radar-App.debug.xcconfig"; path = "Target Support Files/Pods-Food-Radar-App/Pods-Food-Radar-App.debug.xcconfig"; sourceTree = "<group>"; };
 		9D15AEE62749CDD5006E136A /* FeedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
 		9D20497B2751FC81008B8B5E /* MKMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewController.swift; sourceTree = "<group>"; };
+		9D20497D2759EBC7008B8B5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D20497F2759EC5D008B8B5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D2643DB27363276003FF259 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9D2CFD02273443070078E86D /* Food-Radar-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Radar-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2CFD05273443070078E86D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				9D2CFD05273443070078E86D /* AppDelegate.swift */,
+				9D20497D2759EBC7008B8B5E /* ContentView.swift */,
+				9D20497F2759EC5D008B8B5E /* ViewController.swift */,
 				9D2643DB27363276003FF259 /* SignUpViewController.swift */,
 				9D2CFD07273443070078E86D /* SceneDelegate.swift */,
 				9D2CFD0B273443070078E86D /* Main.storyboard */,
@@ -220,11 +226,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2049802759EC5D008B8B5E /* ViewController.swift in Sources */,
 				9D2643DC27363276003FF259 /* SignUpViewController.swift in Sources */,
 				9D20497C2751FC81008B8B5E /* MKMapViewController.swift in Sources */,
 				D7EF46FD2735DAA80011BAD8 /* LoginViewController.swift in Sources */,
 				9D2CFD06273443070078E86D /* AppDelegate.swift in Sources */,
 				D7EF46FF2735DAB90011BAD8 /* FeedViewController.swift in Sources */,
+				9D20497E2759EBC7008B8B5E /* ContentView.swift in Sources */,
 				D7EF47032735FE980011BAD8 /* LandingViewController.swift in Sources */,
 				9D15AEE72749CDD5006E136A /* FeedViewCell.swift in Sources */,
 				9D2CFD08273443070078E86D /* SceneDelegate.swift in Sources */,

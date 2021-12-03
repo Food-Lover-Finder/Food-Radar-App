@@ -571,22 +571,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YRZ-WY-Dmr">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YRZ-WY-Dmr">
+                                <rect key="frame" x="20" y="-10" width="394" height="508"/>
                                 <connections>
                                     <outlet property="delegate" destination="84f-Wc-pjr" id="vtH-fr-nda"/>
                                 </connections>
                             </mapView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UuT-MO-mhK">
-                                <rect key="frame" x="0.0" y="813" width="414" height="44"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POn-9X-es3">
+                                <rect key="frame" x="0.0" y="0.0" width="451" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem systemItem="search" id="fRm-ww-DHa">
-                                        <connections>
-                                            <action selector="searchButton:" destination="84f-Wc-pjr" id="CQf-i0-muf"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
+                                <connections>
+                                    <segue destination="Qce-jQ-XCg" kind="embed" destinationCreationSelector="mapsSwiftUI:" id="M3s-TK-z6u"/>
+                                </connections>
+                            </containerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UuT-MO-mhK">
+                                <rect key="frame" x="0.0" y="825" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
                             </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bhb-Pi-Xrm"/>
@@ -613,7 +614,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUU-ws-Vzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-542.02898550724638" y="3681.6964285714284"/>
+            <point key="canvasLocation" x="-1381.1594202898552" y="4408.9285714285716"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="79T-Xa-bGI">
+            <objects>
+                <hostingController id="Qce-jQ-XCg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeM-PT-pnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2232" y="3682"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ODW-0A-MV8">
@@ -635,7 +644,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qAt-2j-q15"/>
+        <segue reference="BRm-DA-EEJ"/>
         <segue reference="ppq-ib-3IW"/>
     </inferredMetricsTieBreakers>
     <resources>
