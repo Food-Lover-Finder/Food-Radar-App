@@ -35,9 +35,8 @@ This is an app for hungry people who have little desire to do much thinking abou
 - [x] User can log into their account 
 - [ ] User can choose to take a food preference survey 
 - [ ] User can choose to skip food preference survey
-- [ ] User can get food suggestions based on their location only
-- [ ] User can get food suggestions based on food preferences as well as location
-- [ ] User can view profile 
+- [x] User can get landmarks near location
+- [x] User can search for different landmarks in the location
 
 **Optional Nice-to-have Stories**
 
