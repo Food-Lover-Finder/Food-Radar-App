@@ -33,8 +33,7 @@ This is an app for hungry people who have little desire to do much thinking abou
 - [x] User sees app icon in home screen and styled launch screen
 - [x] User can sign up for an account
 - [x] User can log into their account 
-- [ ] User can choose to take a food preference survey 
-- [ ] User can choose to skip food preference survey
+- [x] User can choose to skip food preference survey
 - [x] User can get landmarks near location
 - [x] User can search for different landmarks in the location
 
@@ -118,6 +117,8 @@ Project Progress
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/87346208/143658839-68546c1e-b6c1-49fe-88aa-f06b8da00eff.gif)
 
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/87346208/144697267-ae8fe656-6a2b-482d-bc3d-dc2667db614a.gif)
 
 
 
