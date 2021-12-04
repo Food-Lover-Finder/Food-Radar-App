@@ -8,23 +8,56 @@
 import UIKit
 import Parse
 
-class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class FeedViewController: UIViewController {
+//    , UITableViewDataSource, UITableViewDelegate
     
     @IBOutlet weak var homeTableView: UITableView!
+    struct result: Codable {
+        let restaurant_name: String
+        let restaurant_phone: String
+        let restaurant_website: String
+        let hours: String
+        let price_range: String
+        let restaurant_id: Double
+        let address: Address
+    }
+    
+    struct Address: Codable {
+        let city: String
+        let state: String
+        let postal_code: String
+        let street: String
+        let formatted: String
+    }
+    
+    var restaurantList = [[String:Any]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        homeTableView.dataSource = self
-        homeTableView.delegate = self
+//        homeTableView.dataSource = self
+//        homeTableView.delegate = self
 
         // Do any additional setup after loading the view.
+        let url = URL(string: "https://api.documenu.com/v2/restaurant/4072702673999819?key=272dbbb2dd1f1609ae7c84a8a42f6d58")!
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) { (data, response, error) in
+             // This will run when the network request returns
+             if let error = error {
+                    print(error.localizedDescription)
+             } else if let data = data {
+                    let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                    self.restaurantList = dataDictionary["result"] as! [[String: Any]]
+                    print(dataDictionary)
+             }
+        }
+        task.resume()
     }
     
-
     @IBAction func searchButton(_ sender: Any) {
     }
-    
+
     @IBAction func logOutButton(_ sender: Any) {
         PFUser.logOut()
         let main = UIStoryboard(name: "Main", bundle: nil)
@@ -35,15 +68,21 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-                
-        return cell
-    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return list.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = UITableViewCell()
+//        let cell = tableView.dequeueReusableCell(withReuseIdentifier: "FeedViewCell", for: indexPath) as! MovieGridCell
+//        let restaurant = restaurantList[indexPath.item]
+//        let baseUrl = "https://image.tmdb.org/t/p/w500"
+//        let posterPath = restaurant["restaurant"] as! String
+//        let posterUrl = URL(string: baseUrl + posterPath)
+//        cell.posterView.af_setImage(withURL: posterUrl!)
+//        return cell
+//
+//    }
 
     /*
     // MARK: - Navigation
