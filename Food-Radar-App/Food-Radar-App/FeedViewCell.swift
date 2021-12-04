@@ -9,10 +9,11 @@ import UIKit
 
 class FeedViewCell: UITableViewCell {
     
-    @IBOutlet weak var restaurantPicture: UIImageView!
+    
     @IBOutlet weak var restaurantName: UILabel!
-    @IBOutlet weak var cuisineType: UILabel!
-    @IBOutlet weak var restaurantDistance: UILabel!
+    @IBOutlet weak var priceRange: UILabel!
+    @IBOutlet weak var hours: UILabel!
+    @IBOutlet weak var phone: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
