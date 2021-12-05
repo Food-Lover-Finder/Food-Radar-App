@@ -666,7 +666,7 @@
                 <hostingController id="Qce-jQ-XCg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GeM-PT-pnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2232" y="3682"/>
+            <point key="canvasLocation" x="-727" y="4418"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ODW-0A-MV8">
