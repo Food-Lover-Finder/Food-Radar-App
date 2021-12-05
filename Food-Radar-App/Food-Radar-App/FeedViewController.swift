@@ -11,23 +11,6 @@ import Parse
 class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
     @IBOutlet weak var homeTableView: UITableView!
-    struct result: Codable {
-        let restaurant_name: String
-        let restaurant_phone: String
-        let restaurant_website: String
-        let hours: String
-        let price_range: String
-        let restaurant_id: Double
-        let address: Address
-    }
-    
-    struct Address: Codable {
-        let city: String
-        let state: String
-        let postal_code: String
-        let street: String
-        let formatted: String
-    }
     
     var restaurantList = [[String: Any]]()
     
@@ -56,9 +39,6 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         task.resume()
     }
     
-//    @IBAction func searchButton(_ sender: Any) {
-//    }
-
     @IBAction func logOutButton(_ sender: Any) {
         PFUser.logOut()
         let main = UIStoryboard(name: "Main", bundle: nil)
@@ -72,24 +52,34 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = homeTableView.dequeueReusableCell(withIdentifier: "FeedViewCell") as! FeedViewCell
+        let cell = homeTableView.dequeueReusableCell(withIdentifier: "FeedViewCell", for: indexPath) as! FeedViewCell
+//        let cell = homeTableView.dequeueReusableCell(withIdentifier: "FeedViewCell") as! FeedViewCell
         let restaurant = restaurantList[indexPath.row]
         let restaurant_name = restaurant["restaurant_name"] as! String
         let price_range = restaurant["price_range"] as! String
         let hours = restaurant["hours"] as! String
-//        let phone = restaurant["phone"] as! String
+        let cuisines = restaurant["cuisines"] as! [String]
 
         cell.restaurantName!.text = restaurant_name
-        cell.priceRange!.text = price_range
-        cell.hours!.text = hours
-//        cell.phone!.text = phone
         
-//        let baseUrl = "https://image.tmdb.org/t/p/w500"
-//        let posterPath = movie["poster_path"] as! String
-//        let posterUrl = URL(string: baseUrl + posterPath)
-//
-//        cell.posterView.af_setImage(withURL: posterUrl!)
-//
+        if price_range != "" {
+            cell.priceRange!.text = price_range
+        } else {
+            cell.priceRange!.text = "Unavailable"
+        }
+        
+        if hours != "" {
+            cell.hours!.text = hours
+        } else {
+            cell.hours!.text = "Unavailable"
+        }
+        
+        if cuisines[0] != "" {
+            cell.cuisine!.text = cuisines[0]
+        } else {
+            cell.cuisine!.text = "Unavalable"
+        }
+        
         return cell
     }
     
