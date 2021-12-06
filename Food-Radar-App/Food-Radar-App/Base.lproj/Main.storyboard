@@ -114,6 +114,22 @@
             </objects>
             <point key="canvasLocation" x="-1452" y="80"/>
         </scene>
+        <!--Restaurant Info View Controller-->
+        <scene sceneID="pif-0M-wLd">
+            <objects>
+                <viewController id="rVl-Il-mex" customClass="RestaurantInfoViewController" customModule="Food_Radar_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17L-fb-AaF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0Gc-Io-OsS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hLe-nw-n4J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fP-SF-ca7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2105" y="2965"/>
+        </scene>
         <!--Home-->
         <scene sceneID="Sfu-II-4Ef">
             <objects>
@@ -203,6 +219,7 @@
                                                     </buttonConfiguration>
                                                     <connections>
                                                         <action selector="moreInfo:" destination="mBQ-Dx-EhQ" eventType="touchUpInside" id="l8d-nE-789"/>
+                                                        <segue destination="rVl-Il-mex" kind="show" id="0l5-Ck-BtW"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3z-Az-r5n">
@@ -227,6 +244,7 @@
                                                     </buttonConfiguration>
                                                     <connections>
                                                         <action selector="moreInfo:" destination="mBQ-Dx-EhQ" eventType="touchUpInside" id="syt-Ln-MxI"/>
+                                                        <segue destination="fGA-Xy-cRk" kind="show" id="QDo-ER-c2g"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -305,6 +323,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73Z-m6-RJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1453.5999999999999" y="2939.2803598200903"/>
+        </scene>
+        <!--Manu View Controller-->
+        <scene sceneID="ghF-gR-Ief">
+            <objects>
+                <viewController id="fGA-Xy-cRk" customClass="ManuViewController" customModule="Food_Radar_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wKH-w4-ALi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3aR-RZ-bJe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QpJ-2e-dkg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Wz-Se-XLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-783" y="2962"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="msP-kq-MOn">
