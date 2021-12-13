@@ -34,8 +34,7 @@ class SignUpViewController: UIViewController {
         user.password = passwordField.text
         user.email = emailField.text
           // other fields can be set just like with PFObject
-        user["restrictOther"] = restrictionOtherField.text
-        user["preferenceOther"] = preferenceOtherField.text
+
         
         user.signUpInBackground { (success, error) in
             if success {
