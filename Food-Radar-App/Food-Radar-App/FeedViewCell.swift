@@ -24,8 +24,7 @@ class FeedViewCell: UITableViewCell {
         // Initialization code
     }
 
-    @IBAction func moreInfo(_ sender: Any) {
-    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

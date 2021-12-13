@@ -20,9 +20,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         homeTableView.dataSource = self
         homeTableView.delegate = self
 
-        // Do any additional setup after loading the view.
-//        let url = URL(string: "https://api.documenu.com/v2/restaurant/4072702673999819?key=272dbbb2dd1f1609ae7c84a8a42f6d58")!
-        let url = URL(string: "https://api.documenu.com/v2/restaurants/zip_code/11211?size=20&key=272dbbb2dd1f1609ae7c84a8a42f6d58")!
+        let url = URL(string: "https://api.documenu.com/v2/restaurants/zip_code/10065?size=20&key=272dbbb2dd1f1609ae7c84a8a42f6d58")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -52,7 +50,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = homeTableView.dequeueReusableCell(withIdentifier: "FeedViewCell", for: indexPath) as! FeedViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedViewCell", for: indexPath) as! FeedViewCell
 //        let cell = homeTableView.dequeueReusableCell(withIdentifier: "FeedViewCell") as! FeedViewCell
         let restaurant = restaurantList[indexPath.row]
         let restaurant_name = restaurant["restaurant_name"] as! String
