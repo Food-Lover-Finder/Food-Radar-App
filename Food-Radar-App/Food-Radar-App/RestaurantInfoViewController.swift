@@ -23,11 +23,39 @@ class RestaurantInfoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        restaurantNameLabel.text = restaurant["restaurant_name"] as? String
-        priceLabel.text = restaurant["price_range"] as? String
-        hoursLabel.text = restaurant["hours"] as? String
+//        restaurantNameLabel.text = restaurant["restaurant_name"] as? String
+//        priceLabel.text = restaurant["price_range"] as? String
+//        hoursLabel.text = restaurant["hours"] as? String
 //        cuisineLabel.text = restaurant["cuisine"][0] as? String
 //        addressLabel.text = restaurant["address"]["formatted"] as? String
+//
+        
+        let restaurant_name = restaurant["restaurant_name"] as! String
+        let price_range = restaurant["price_range"] as! String
+        let hours = restaurant["hours"] as! String
+        let cuisines = restaurant["cuisines"] as! [String]
+        //let address = restaurant["address"]
+       
+        restaurantNameLabel!.text = restaurant_name
+        
+        if price_range != "" {
+           priceLabel!.text = price_range
+        } else {
+           priceLabel!.text = "Unavailable"
+        }
+        
+        if hours != "" {
+            hoursLabel!.text = hours
+        } else {
+            hoursLabel!.text = "Unavailable"
+        }
+        
+        if cuisines[0] != "" {
+            cuisineLabel!.text = cuisines[0]
+        } else {
+            cuisineLabel!.text = "Unavalable"
+        }
+//        addressLabel!.text = address["formatted"] as! String
         phoneLabel.text = restaurant["restaurant_phone"] as? String
        
     }
